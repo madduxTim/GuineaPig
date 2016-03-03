@@ -1,0 +1,24 @@
+.bluePig {
+    color: blue;
+}
+
+.pigPen {
+    border: 1px dashed black;
+}
+
+.pigPenRound {
+    border: 1px dashed black;
+    border-radius: 15%;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.italed {
+    font-style: italic;
+}
+
+.blockButtons {
+    display: block;
+}
