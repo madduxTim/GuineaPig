@@ -3,7 +3,7 @@
 var sections = document.getElementsByClassName("article-section");
 for (var i = 0; i<sections.length; i++) {  
     sections[i].addEventListener("click", function() {
-        document.getElementById("output-target").innerHTML = "You clicked on the " + this.textContent + " section";
+        document.getElementById("output-target").innerHTML = "You clicked on the " + this.innerHTML + " section";
     });
 };
 
@@ -22,7 +22,7 @@ document.getElementById("keypress-input").addEventListener("keyup", function() {
 });
 // When you click the "Add color" button, the guinea-pig element's text color should change to blue.
 document.getElementById("add-color").addEventListener("click", function() {
-    document.getElementById("guinea-pig").className += " bluePig";
+    document.getElementById("guinea-pig").classList.toggle("bluePig");
 });
 // When you click the "Hulkify" button, the guinea-pig element's font size should become much larger.
 document.getElementById("make-large").addEventListener("click", function() {
